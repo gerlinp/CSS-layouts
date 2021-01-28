@@ -18,6 +18,10 @@ section {
     border-bottom: 2px dotted #666;
     background-color: azure;
 }
+
+.hide {
+    display: none;
+}
 aside img{
     width: 100%;
     max-width: 480px;
@@ -36,4 +40,11 @@ footer {
     color: #294969;
     font-size: .8rem;
     text-align: center; 
+}
+
+ul li {
+    display: inline-block;
+    width: 30;
+    padding: 10px 0;
+    background-color: yellow;
 }
