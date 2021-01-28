@@ -2,7 +2,6 @@
 *  {
     box-sizing: border-box;
 }
-
 header {
     background-color: #294969;
     color: ghostwhite;
@@ -13,11 +12,11 @@ header {
 }
 
 aside img{
-    width: 600px;
+    width: 100%;
+    max-width: 480px;
 }
 
 #bio {
-    width: 600px;
     padding: 2rem;
     border: 5px solid tomato;
     background-color: mistyrose;
