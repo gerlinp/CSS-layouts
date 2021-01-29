@@ -2,23 +2,39 @@
 *  {
     box-sizing: border-box;
 }
+html {
+    font-size: 20px;
+}
 header {
-    height: 25vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #294969;
     color: ghostwhite;
     padding: 10px 15px;
     border: 12px solid #ffa949;
     border-bottom-color: #cf7919;
-    margin: -8px -8px 20px;
 }
-
+article {
+    margin-top: 3rem;
+}
 section {
     min-height: 100vh;
     padding: 1rem;
     border-bottom: 2px dotted #666;
     background-color: azure;
 }
-
+#interesting-banner {
+    position: sticky;
+    top: 0;
+    padding: 10px 15px;
+    border: 12px solid lightsalmon;
+    margin: 0 -8px;
+    background: firebrick;
+    color: white;
+    font-weight: bold;
+}
 .hide {
     display: none;
 }
