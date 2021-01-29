@@ -7,6 +7,7 @@ html {
 }
 header {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,8 +26,13 @@ section {
     border-bottom: 2px dotted #666;
     background-color: azure;
 }
+.small-img {
+    width: 100%;
+}
+
 #interesting-banner {
     position: sticky;
+    z-index: 3;
     top: 0;
     padding: 10px 15px;
     border: 12px solid lightsalmon;
@@ -42,6 +48,7 @@ section {
 figure {
     position: relative;
     margin:0;
+    z-index: 1;
 }
 figcaption {
     position: absolute;
@@ -69,10 +76,47 @@ footer {
     font-size: .8rem;
     text-align: center; 
 }
-
 ul li {
-    display: inline-block;
+    display: block;
     width: 30;
     padding: 10px 0;
+    margin-bottom: 10px;
     background-color: yellow;
+    text-align: center;
+}
+@media print {
+    section {
+        min-height: auto;
+
+    }
+    #interesting-banner {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .small-img {
+        float: left;
+        width: 300px;
+        margin: 0 1rem 1rem 0;
+    }
+    .clear {
+        clear: both;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    header {
+        color: yellow;
+    }
+}
+@media screen and (min-width: 730px) {
+    ul li {
+        display:inline-block;
+        width: 30%;
+    }
+}
+@media screen and (min-width: 900px), (orientation: portrait) {
+    section {
+        background-color: cornsilk;
+    }
 }
